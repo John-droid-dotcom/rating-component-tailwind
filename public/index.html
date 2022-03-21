@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-slate-900 h-screen w-screen flex justify-center items-center sm:p-0" id="container">
+        <div class="bg-gray-800 lg:w-2/5 lg:h-1/2 flex flex-col justify-center lg:py-1 lg:px-9 lg:gap-7 rounded-3xl">
+            <div class="star-div rounded-full bg-slate-700 w-10 h-10 flex justify-center items-center">
+                <img src="../assets/icon-star.svg" alt="" />
+            </div>
+            <h1 class="text-slate-50 text-2xl">How did we do?</h1>
+            <p class="text-slate-400 text-base">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="btn-div text-slate-400 flex flex-row justify-center items-center lg:gap-10 my-3">
+                <button id="rateBtn1" class="w-12 h-12 bg-slate-700 rounded-full hover:bg-slate-400 hover:text-slate-50 rateBtn" value="1">1</button
+          >
+          <button
+            onclick="chooseRating()"
+            id="rateBtn2"
+            class="rateBtn w-12 h-12 bg-slate-700 rounded-full hover:bg-slate-400 hover:text-slate-50"
+            value="2"
+            >2</button
+          ><button
+            onclick="chooseRating()"
+            id="rateBtn3"
+            class="rateBtn w-12 h-12 bg-slate-700 rounded-full hover:bg-slate-400 hover:text-slate-50"
+            value="3"
+            >3</button
+          ><button
+            onclick="chooseRating()"
+            id="rateBtn4"
+            class="rateBtn w-12 h-12 bg-slate-700 rounded-full hover:bg-slate-400 hover:text-slate-50"
+            value="4"
+            >4</button
+          ><button
+            onclick="chooseRating()"
+            id="rateBtn5"
+            class="rateBtn w-12 h-12 bg-slate-700 rounded-full hover:bg-slate-400 hover:text-slate-50"
+            value="5"
+            >5</button
+          >
+        </div>
+        <button
+          id="btn"
+          onclick="showRatingPage()"
+          class="text-slate-50 bg-[#FC7613] h-12 rounded-full text-lg hover:bg-slate-50 hover:text-[#FC7613] transition ease-in-out delay-150"
+          >SUBMIT</button
+        >
+      </div>
+    </div>
+  </body>
+</html>
